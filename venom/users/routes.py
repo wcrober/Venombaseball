@@ -3,7 +3,7 @@ from flask_login import login_user, current_user, logout_user, login_required
 from venom import db, bcrypt
 from venom.models import User, Post
 from venom.users.forms import (RegistrationForm, LoginForm, UpdateAccountForm,
-                                   RequestResetForm, ResetPasswordForm)
+                               RequestResetForm, ResetPasswordForm)
 from venom.users.utils import save_picture, send_reset_email
 
 users = Blueprint('users', __name__)
